@@ -4,7 +4,7 @@ import random
 import pygame
 from tkinter import Scale, HORIZONTAL
 
-
+#1
 planets = [
     "61 Cygni", "Alpha", "Anacreon", "Askone", "Asperta", "Aurora",
     "Baronn", "Bonde", "Cil", "Cinna", "Comporellon", "Daribow",
@@ -31,7 +31,7 @@ speaker = win32com.client.Dispatch("SAPI.SpVoice")
 pygame.mixer.init()
 pygame.mixer.music.load(r"C:\Users\kreet\Downloads\deep-grounding-earth-bowl-vibrations-388623.mp3")
 pygame.mixer.music.play(-1)  
-
+#2
 class PlanetRecitor:
     def __init__(self, root, planets):
         self.root = root
@@ -161,3 +161,4 @@ root = tk.Tk()
 app = PlanetRecitor(root, planets)
 root.protocol("WM_DELETE_WINDOW", on_close)
 root.mainloop()
+
